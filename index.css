@@ -1,0 +1,25 @@
+/* Styling the question and answer text as buttons */
+.flashcard-face p {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem; /* Adjust the size for better readability */
+  font-weight: bold;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  text-align: center;
+  background-color: #f0f0f0; /* Neutral background for question */
+  color: #333; /* Dark text for better contrast */
+  transition: all 0.3s ease-in-out;
+}
+
+.flashcard-face.back p {
+  background-color: #4a90e2; /* Vibrant background for answer */
+  color: #fff; /* Light text for contrast */
+}
+
+.flashcard-face p:hover {
+  border-color: #007bff; /* Highlight border on hover */
+  background-color: #e8f0fe; /* Slightly change background */
+  transform: scale(1.05); /* Slight zoom effect */
+  cursor: pointer;
+}
